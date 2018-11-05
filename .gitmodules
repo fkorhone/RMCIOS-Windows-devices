@@ -3,8 +3,8 @@
 	url = https://github.com/fkorhone/RMCIOS-interfaces
 [submodule "src/RMCIOS-Labjack-module"]
 	path = src/RMCIOS-Labjack-module
-   url = https://github.com/fkorhone/RMCIOS-Labjack-module.git
+	url = https://github.com/fkorhone/RMCIOS-Labjack-module.git
 [submodule "src/RMCIOS-NI-DAQmx-module"]
-	path = src/RMCIOS-Labjack-module
-   url = https://github.com/fkorhone/RMCIOS-NI-DAQmx-module.git
+	path = src/RMCIOS-NI-DAQmx-module
+	url = https://github.com/fkorhone/RMCIOS-NI-DAQmx-module.git
    
