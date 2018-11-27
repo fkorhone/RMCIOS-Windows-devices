@@ -6,7 +6,7 @@ call "toolpath.bat"
 
 :: Settings
 set PROJECTDIR=%CD%
-set FILENAME=%~n0
+set FILENAME=labjack-u12-module
 
 :: Output
 set OUTPUT_DIR=..\modules

@@ -5,6 +5,8 @@
 
 call "toolpath.bat"
 
+set LABJACK_DIR="C:\Program Files (x86)\LabJack\Drivers"
+
 :: Settings
 set PROJECTDIR=%CD%
 set FILENAME=%~n0
@@ -20,7 +22,8 @@ set CFLAGS=%CFLAGS% -static-libgcc
 set CFLAGS=%CFLAGS% -shared -Wl,--subsystem,windows 
 set CFLAGS=%CFLAGS% -I %PROJECTDIR%\RMCIOS-interface
 set CFLAGS=%CFLAGS% -D API_ENTRY_FUNC="__declspec(dllexport) __cdecl"
-set CFLAGS=%CFLAGS% -I %PROJECTDIR%\RMCIOS-Labjack-module\labjack-ljm-library RMCIOS-Labjack-module\labjack-ljm-library\LabJackM.lib
+set CFLAGS=%CFLAGS% -I %LABJACK_DIR% 
+set CFLAGS=%CFLAGS% %LABJACK_DIR%\LabJackM.lib
 call "version_str.bat"
 
 :: Remove earlier produced file. (clean)
