@@ -9,7 +9,7 @@ set LABJACK_DIR="C:\Program Files (x86)\LabJack\Drivers"
 
 :: Settings
 set PROJECTDIR=%CD%
-set FILENAME=%~n0
+set FILENAME=Labjack-LJM-module
 set OUTPUT_FILE=%FILENAME%.dll
 set SOURCES=%SOURCES% string-conversion.c 
 set SOURCES=%SOURCES% RMCIOS-Labjack-module\ljm_channels.c 

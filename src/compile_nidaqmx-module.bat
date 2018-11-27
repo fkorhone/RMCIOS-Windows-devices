@@ -6,7 +6,7 @@ call "toolpath.bat"
 
 :: Settings
 set PROJECTDIR=%CD%
-set FILENAME=%~n0
+set FILENAME=NIDAQmx-module
 set OUTPUT_FILE=%FILENAME%.dll
 set SOURCES=RMCIOS-NI-DAQmx-module\RMCIOS-NI-DAQmx-module.c 
 set SOURCES=%SOURCES% string-conversion.c 
